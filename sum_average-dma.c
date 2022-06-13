@@ -4,19 +4,19 @@ void main()
 {
 inti, n, sum = 0,avg;
 int *a;
-printf(&quot;Enter the size of array A \n&quot;);
-scanf(&quot;%d&quot;, &amp;n);
+printf("Enter the size of array A \n");
+scanf("%d", &amp;n);
 a = (int *) malloc(n * sizeof(int));
-printf(&quot;Enter Elements of the List \n&quot;);
+printf("Enter Elements of the List \n");
 for (i = 0; i&lt; n; i++)
 {
-scanf(&quot;%d&quot;, a + i);
+scanf("%d", a + i);
 }
 for (i = 0; i&lt; n; i++)
 {
 sum = sum + *(a + i);
 }
 avg=sum/n;
-printf(&quot;Sum of all elements in array = %d\n&quot;, sum);
+printf("Sum of all elements in array = %d\n", sum);
 printf(“Average is %d”,avg);
 }

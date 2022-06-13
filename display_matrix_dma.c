@@ -2,8 +2,8 @@
 main()
 {
 int **p,i,j,row,col;
-printf(&quot;enter rows and col&quot;);
-scanf(&quot;%d %d&quot;,&amp;row,&amp;col);
+printf("enter rows and col");
+scanf("%d %d",&amp;row,&amp;col);
 p=(int**)malloc(sizeof(int *)*row);
 for(i=0;i&lt;row;i++)
 
@@ -14,16 +14,16 @@ for(i=0;i&lt;row;i++)
 {
 for(j=0;j&lt;col;j++)
 {
-printf(&quot;enter elements&quot;);
-scanf(&quot;%d&quot;,*(p+i)+j);
+printf("enter elements");
+scanf("%d",*(p+i)+j);
 }
 }
 for(i=0;i&lt;row;i++)
 {
 for(j=0;j&lt;col;j++)
 {
-printf(&quot;%d&quot;,*(*(p+i)+j));
+printf("%d",*(*(p+i)+j));
 }
-printf(&quot;\n&quot;);
+printf("\n");
 }
 }

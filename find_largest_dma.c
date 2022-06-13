@@ -2,23 +2,23 @@
 main()
 {
 int n,i; int *ptr;
-printf(&quot;Enter the total number of elements: &quot;);
-scanf(&quot;%d&quot;, &amp;n);
+printf("Enter the total number of elements: ");
+scanf("%d", &amp;n);
 
 ptr = (int *) malloc(n* sizeof(int));
 if (ptr == NULL)
 {
-printf(&quot;Error.&quot;);
+printf("Error.");
 exit(0);
 }
 for (i = 0; i&lt; n; ++i)
 {
-printf(&quot;Enter number%d: &quot;, i + 1);
-scanf(&quot;%d&quot;, ptr + i); }
+printf("Enter number%d: ", i + 1);
+scanf("%d", ptr + i); }
 for (i = 1; i&lt; n; ++i)
 {
 if (*ptr &lt; *(ptr + i)) *ptr= *(ptr + i);
 }
-printf(&quot;Largest number = %d&quot;, *ptr);
+printf("Largest number = %d", *ptr);
 free(ptr);
 }
